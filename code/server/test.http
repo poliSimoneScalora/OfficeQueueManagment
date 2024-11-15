@@ -1,0 +1,34 @@
+# Login
+POST http://localhost:3001/api/sessions
+content-type: application/json
+
+{
+  "username": "bob",
+  "password": "pwd"
+}
+###
+
+## Checking if user is still logged-in
+GET http://localhost:3001/api/sessions/current
+###
+
+## Execute Log Out
+DELETE http://localhost:3001/api/sessions/current
+###
+
+## Get counter
+GET http://localhost:3001/api/counter/4
+###
+
+## Set served and get next customer
+GET http://localhost:3001/api/served/2
+###
+
+## Set not served and get next customer
+GET http://localhost:3001/api/notserved/2
+###
+
+## Set not served and get next customer
+GET http://localhost:3001/api/notserved/2
+###
+
